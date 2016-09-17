@@ -10,7 +10,42 @@
     tools:context="com.example.trannh08.ad015sendingsms.MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Sending SMS Example"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_phoneNumber"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:textColorHint="@color/colorHint"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_messageContent"
+        android:layout_below="@+id/editText_phoneNumber"
+        android:layout_alignLeft="@+id/editText_phoneNumber"
+        android:layout_alignStart="@+id/editText_phoneNumber"
+        android:textColorHint="@color/colorHint"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:hint="Enter SMS" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send SMS"
+        android:id="@+id/button_sendSms"
+        android:layout_below="@+id/editText_messageContent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp" />
 </RelativeLayout>
